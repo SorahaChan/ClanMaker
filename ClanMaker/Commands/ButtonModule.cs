@@ -19,6 +19,6 @@ public class ButtonModule : InteractionModuleBase<SocketInteractionContext>
         
         _ymlProvider.SaveBattle();
 
-        await RespondAsync("クラン戦参加処理が完了しました.");
+        await RespondAsync($"{Context.User}さんのクラン戦参加処理が完了しました.", ephemeral: true);
     }
 }
